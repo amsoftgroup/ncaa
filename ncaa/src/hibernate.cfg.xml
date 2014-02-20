@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="session_factory">
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">relculo</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/ncaa</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.default_catalog">ncaa</property>
+        <property name="hibernate.default_schema">public</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <mapping resource="com/sombrerosoft/ncaa/hibernate/TourneySeeds.hbm.xml" />
+        <mapping resource="com/sombrerosoft/ncaa/hibernate/TourneyResults.hbm.xml" />
+        <mapping resource="com/sombrerosoft/ncaa/hibernate/Seasons.hbm.xml" />
+        <mapping resource="com/sombrerosoft/ncaa/hibernate/TourneySlots.hbm.xml" />
+        <mapping resource="com/sombrerosoft/ncaa/hibernate/Teams.hbm.xml" />
+        <mapping resource="com/sombrerosoft/ncaa/hibernate/RegularSeasonResults.hbm.xml" />
+        <mapping resource="com/sombrerosoft/ncaa/hibernate/SampleSubmission.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

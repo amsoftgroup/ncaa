@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 15, 2014 10:59:51 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="TourneySlots" table="tourney_slots">
+        <composite-id name="id" class="TourneySlotsId">
+            <key-property name="season" type="string">
+                <column name="season" />
+            </key-property>
+            <key-property name="slot" type="string">
+                <column name="slot" />
+            </key-property>
+            <key-property name="strongseed" type="string">
+                <column name="strongseed" />
+            </key-property>
+            <key-property name="weakseed" type="string">
+                <column name="weakseed" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

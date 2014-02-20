@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 15, 2014 10:59:51 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Seasons" table="seasons">
+        <composite-id name="id" class="SeasonsId">
+            <key-property name="season" type="string">
+                <column name="season" />
+            </key-property>
+            <key-property name="years" type="string">
+                <column name="years" />
+            </key-property>
+            <key-property name="dayzero" type="date">
+                <column name="dayzero" length="13" />
+            </key-property>
+            <key-property name="regionW" type="string">
+                <column name="regionW" />
+            </key-property>
+            <key-property name="regionX" type="string">
+                <column name="regionX" />
+            </key-property>
+            <key-property name="regionY" type="string">
+                <column name="regionY" />
+            </key-property>
+            <key-property name="regionZ" type="string">
+                <column name="regionZ" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

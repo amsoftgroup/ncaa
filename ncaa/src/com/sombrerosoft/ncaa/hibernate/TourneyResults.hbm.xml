@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 15, 2014 10:57:08 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.sombrerosoft.ncaa.hibernate.TourneyResults" table="tourney_results">
+        <composite-id name="id" class="com.sombrerosoft.ncaa.hibernate.TourneyResultsId">
+            <key-property name="season" type="string">
+                <column name="season" />
+            </key-property>
+            <key-property name="daynum" type="int">
+                <column name="daynum" />
+            </key-property>
+            <key-property name="wteam" type="int">
+                <column name="wteam" />
+            </key-property>
+        </composite-id>
+        <property name="wscore" type="java.lang.Integer">
+            <column name="wscore" />
+        </property>
+        <property name="lteam" type="java.lang.Integer">
+            <column name="lteam" />
+        </property>
+        <property name="lscore" type="java.lang.Integer">
+            <column name="lscore" />
+        </property>
+        <property name="numot" type="string">
+            <column name="numot" />
+        </property>
+    </class>
+</hibernate-mapping>

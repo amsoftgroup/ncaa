@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 15, 2014 10:59:51 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="TourneySeeds" table="tourney_seeds">
+        <composite-id name="id" class="TourneySeedsId">
+            <key-property name="season" type="string">
+                <column name="season" />
+            </key-property>
+            <key-property name="seed" type="string">
+                <column name="seed" />
+            </key-property>
+            <key-property name="team" type="int">
+                <column name="team" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
